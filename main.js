@@ -27,8 +27,29 @@ function calculateFFMI() {
   const ffmi = leanMass / (heightM * heightM);
   const adjustedFFMI = ffmi + 6.1 * (1.8 - heightM);
 
-  resultDiv.style.color = "#FFD700";
-  resultDiv.innerHTML = `
-    FFMI: ${ffmi.toFixed(2)}<br>
-  `;
+   resultDiv.style.color = "#FFD700";
+  resultDiv.innerHTML = `FFMI: ${ffmi.toFixed(2)}<br>`;
+
+  const gaugeDiv = document.getElementById('gauge');
+  let category = "";
+  
+  if (ffmi < 18) {
+    category = "Below average - minimal muscle development.";
+  } else if (ffmi < 20) {
+    category = "Average - recreational lifters or active individuals.";
+  } else if (ffmi < 22) {
+    category = "Athletic - consistent lifters or non-competitive bodybuilders.";
+  } else if (ffmi < 24) {
+    category = "Local-level bodybuilder - lean and muscular.";
+  } else if (ffmi < 26) {
+    category = "National-level bodybuilder - very high lean mass.";
+  } else {
+    category = "World-class level - typically requires elite genetics or enhancement.";
+  }
+
+  gaugeDiv.innerHTML = `Category: ${category}`;
+  gaugeDiv.style.color = "#999";
+  gaugeDiv.style.marginTop = "1rem";
+  gaugeDiv.style.textAlign = "center";
+
 }
