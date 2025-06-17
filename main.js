@@ -38,13 +38,13 @@ function calculateFFMI() {
   } else if (ffmi < 20) {
     category = "Average - recreational lifters or active individuals.";
   } else if (ffmi < 22) {
-    category = "Athletic - consistent lifters or non-competitive bodybuilders.";
+    category = "Athletic-level - consistent lifters or non-competitive bodybuilders.";
   } else if (ffmi < 24) {
-    category = "Local-level bodybuilder - lean and muscular.";
+    category = "Local-level  - lean and muscular.";
   } else if (ffmi < 26) {
-    category = "National-level bodybuilder - very high lean mass.";
+    category = "National-level  - very high lean mass.";
   } else {
-    category = "World-class level - typically requires elite genetics or enhancement.";
+    category = "World-class level - elite genetics or enhancement.";
   }
 
   gaugeDiv.innerHTML = `Category: ${category}`;
