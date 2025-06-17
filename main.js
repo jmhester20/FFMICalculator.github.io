@@ -29,6 +29,6 @@ function calculateFFMI() {
 
   resultDiv.style.color = "#FFD700";
   resultDiv.innerHTML = `
-    FFMI: ${ffmi.toFixed(2)}<br>}
+    FFMI: ${ffmi.toFixed(2)}<br>
   `;
 }
