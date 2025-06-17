@@ -40,9 +40,9 @@ function calculateFFMI() {
   } else if (ffmi < 22) {
     category = "Athletic-level - consistent lifters or non-competitive bodybuilders.";
   } else if (ffmi < 24) {
-    category = "Local-level  - lean and muscular.";
+    category = "Local-level  -  high muscle mass.";
   } else if (ffmi < 26) {
-    category = "National-level  - very high lean mass.";
+    category = "National-level  - very high muscle mass.";
   } else {
     category = "World-class level - elite genetics or enhancement.";
   }
