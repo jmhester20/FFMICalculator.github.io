@@ -29,7 +29,6 @@ function calculateFFMI() {
 
   resultDiv.style.color = "#FFD700";
   resultDiv.innerHTML = `
-    FFMI: ${ffmi.toFixed(2)}<br>
-    Adjusted FFMI (for 1.8m height): ${adjustedFFMI.toFixed(2)}
+    FFMI: ${ffmi.toFixed(2)}<br>}
   `;
 }
