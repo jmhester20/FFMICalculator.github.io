@@ -34,9 +34,9 @@ function calculateFFMI() {
   let category = "";
   
   if (ffmi < 18) {
-    category = "Below average - minimal muscle development.";
+    category = "Average -  decent muscle development.";
   } else if (ffmi < 20) {
-    category = "Average - recreational lifters or active individuals.";
+    category = "Above Average - recreational lifters or active individuals.";
   } else if (ffmi < 22) {
     category = "Athletic-level - consistent lifters or non-competitive bodybuilders.";
   } else if (ffmi < 24) {
